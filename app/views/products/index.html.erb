@@ -1,12 +1,25 @@
-<h1><%= t "Anime Firuge" %></h1>
+<h1><%= t "Anime Figure" %></h1>
 
-<%= link_to "Thêm sản phẩm mới", new_product_path if authenticated? %>
-<%= link_to "Đăng nhập", new_session_path unless authenticated? %>
+<%= link_to "Thêm sản phẩm mới", new_product_path, class: 'btn-new-product' if authenticated? %>
+<%= link_to "Đăng nhập", new_session_path, class: 'btn-login' unless authenticated? %>
 
 <div id="products">
   <% @products.each do |product| %>
-    <div>
-      <%= link_to product.name, product %>
+    <div class="product-item">
+      <!-- Kiểm tra xem sản phẩm có ảnh hay không -->
+      <% if product.featured_image.attached? %>
+        <%= image_tag product.featured_image, class: 'product-image' %> <!-- Hiển thị ảnh sản phẩm -->
+      <% else %>
+        <p>No Image Available</p> <!-- Nếu không có ảnh, hiển thị thông báo -->
+      <% end %>
+
+      <!-- Hiển thị tên sản phẩm -->
+      <%= link_to product.name, product, class: 'product-link' %>
     </div>
   <% end %>
 </div>
+
+
+
+
+<link rel="stylesheet" href="/assets/stylesheets/index.css">
