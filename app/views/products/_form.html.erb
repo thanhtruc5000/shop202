@@ -1,15 +1,20 @@
 <%= form_with model: product do |form| %>
   <div>
-    <%= form.label :name %>
+    <%= form.label :name, "Tên sản phẩm" %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <%= form.label :description, "Mô tả sản phẩm", style: "display: block" %>
     <%= form.rich_text_area :description %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.label :featured_image, "Hình ảnh nổi bật", style: "display: block" %>
+    <%= form.file_field :featured_image, accept: "image/*" %>
+  </div>
+
+  <div>
+    <%= form.submit "Lưu sản phẩm" %>
   </div>
 <% end %>
