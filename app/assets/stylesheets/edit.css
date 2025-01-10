@@ -1,0 +1,42 @@
+/* CSS cho trang chỉnh sửa sản phẩm */
+.edit-product-page {
+    width: 100%;
+    max-width: 800px; /* Giới hạn chiều rộng của trang */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề của trang chỉnh sửa */
+  .edit-product-page h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Kiểu cho các nút */
+  .btn-cancel {
+    display: inline-block;
+    background-color: #f44336; /* Màu đỏ */
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #d32f2f; /* Màu đỏ đậm khi hover */
+  }
+  
+  .btn-cancel:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(244, 67, 54, 0.5); /* Hiệu ứng khi focus vào nút */
+  }
+  

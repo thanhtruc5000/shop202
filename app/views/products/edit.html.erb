@@ -1,4 +1,8 @@
 <h1>Chỉnh sửa sản phẩm</h1>
 
 <%= render "form", product: @product %>
-<%= link_to "Hủy bỏ", @product %>
+
+<%= link_to "Hủy bỏ", @product, class: "btn-cancel" %>
+
+
+<link rel="stylesheet" href="/assets/stylesheets/edit.css">

@@ -1,14 +1,5 @@
 
-    h2 {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  /* Kiểu cho các trường nhập liệu */
-  .form-group {
+    .form-group {
     margin-bottom: 20px;
   }
   
@@ -34,6 +25,21 @@
     border-color: #007bff;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Kiểu cho trường inventory_count */
+  form .form-group .form-control[type="number"] {
+    width: 100%; /* Chiếm hết chiều rộng */
+    padding: 12px 10px; /* Tăng padding cho trường số */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form .form-group .form-control[type="number"]:focus {
+    border-color: #28a745; /* Màu khi focus vào trường inventory_count */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
   }
   
   /* Kiểu cho nút 'Thêm sản phẩm' */

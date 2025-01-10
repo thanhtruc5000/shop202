@@ -1,5 +1,4 @@
 <%= form_with model: product do |form| %>
-  <h2>Thêm sản phẩm mới</h2> 
 
   <div class="form-group">
     <%= form.label :name, "Tên sản phẩm" %>
@@ -15,11 +14,17 @@
     <%= form.label :featured_image, "Hình ảnh nổi bật" %>
     <%= form.file_field :featured_image, accept: "image/*", class: "form-control" %>
   </div>
+  
+  <div class="form-group">
+    <%= form.label :inventory_count, "Số lượng trong kho" %>
+    <%= form.number_field :inventory_count, class: "form-control" %>
+  </div>
 
   <div class="form-group">
     <%= form.submit "Thêm sản phẩm", class: "btn-submit" %> 
   </div>
 <% end %>
+
 
 
 
