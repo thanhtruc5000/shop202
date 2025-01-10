@@ -1,20 +1,28 @@
 <%= form_with model: product do |form| %>
-  <div>
+  <h2>Thêm sản phẩm mới</h2> 
+
+  <div class="form-group">
     <%= form.label :name, "Tên sản phẩm" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :description, "Mô tả sản phẩm", style: "display: block" %>
-    <%= form.rich_text_area :description %>
+  <div class="form-group">
+    <%= form.label :description, "Mô tả sản phẩm" %>
+    <%= form.rich_text_area :description, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :featured_image, "Hình ảnh nổi bật", style: "display: block" %>
-    <%= form.file_field :featured_image, accept: "image/*" %>
+  <div class="form-group">
+    <%= form.label :featured_image, "Hình ảnh nổi bật" %>
+    <%= form.file_field :featured_image, accept: "image/*", class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.submit "Lưu sản phẩm" %>
+  <div class="form-group">
+    <%= form.submit "Thêm sản phẩm", class: "btn-submit" %> 
   </div>
 <% end %>
+
+
+
+
+
+<link rel="stylesheet" href="/assets/stylesheets/_form.css">

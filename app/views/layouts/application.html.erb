@@ -20,27 +20,25 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <link rel="stylesheet" href="/assets/stylesheets.css">
+    <link rel="stylesheet" href="/assets/stylesheets/application.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
 
-  <body>
+ <body>
   <header>
     <nav>
-      <!-- Tên ứng dụng và icon -->
+      
       <div class="app-name">
         <i class="fas fa-home"></i>
         <%= link_to "Trang chủ", root_path, class: "nav-link" %>
       </div>
 
       <div class="auth-links">
-        <!-- Đăng xuất -->
+        
         <%= button_to "Đăng xuất", session_path, method: :delete, class: "nav-button" if authenticated? %>
 
-        <!-- Đăng nhập với icon -->
         <%= link_to "<i class='fas fa-sign-in-alt'></i> Đăng nhập".html_safe, new_session_path, class: "nav-link" unless authenticated? %>
 
-        <!-- Đăng ký với icon -->
         <%= link_to "<i class='fas fa-user-plus'></i> Đăng ký".html_safe, new_registration_path, class: "nav-link" unless authenticated? %>
       </div>
     </nav>
