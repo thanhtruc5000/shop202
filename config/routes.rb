@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resource :session, only: [ :new, :create, :destroy ]
+  resource :registration, only: [ :new, :create ]
+
+  resources :passwords, param: :token
   get "products/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -15,5 +19,4 @@ Rails.application.routes.draw do
   get "/products", to: "products#index"
   resources :products
   root "products#index"
-
 end
