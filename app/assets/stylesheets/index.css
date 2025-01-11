@@ -1,165 +1,94 @@
 /* Căn chỉnh và kiểu dáng cho tiêu đề */
 h1 {
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
-  }
-  
-  /* Căn chỉnh và kiểu dáng cho các link Thêm sản phẩm mới và Đăng nhập */
-  .btn-new-product, .btn-login {
-    display: inline-block;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .btn-new-product {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .btn-new-product:hover {
-    background-color: #388e3c;
-  }
-  
-  .btn-login {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .btn-login:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Kiểu cho danh sách sản phẩm */
-  #products {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 0 20px;
-  }
-  
-/* Căn chỉnh và kiểu dáng cho tiêu đề */
-h1 {
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
-  }
-  
-  /* Căn chỉnh và kiểu dáng cho các link Thêm sản phẩm mới và Đăng nhập */
-  .btn-new-product, .btn-login {
-    display: inline-block;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .btn-new-product {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .btn-new-product:hover {
-    background-color: #388e3c;
-  }
-  
-  .btn-login {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .btn-login:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Kiểu cho danh sách sản phẩm */
-  #products {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 0 20px;
-  }
-  
-  /* Kiểu cho mỗi sản phẩm */
-  .product-item {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng mạnh hơn */
-    transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng cho bóng */
-  }
-  
-  .product-item:hover {
-    transform: scale(1); /* Không phóng to sản phẩm khi hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng khi hover */
-  }
-  
-  /* Kiểu cho ảnh sản phẩm */
-  .product-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease; /* Thêm hiệu ứng zoom cho ảnh */
-  }
-  
-  .product-item:hover .product-image {
-    transform: scale(1.05); /* Zoom nhẹ ảnh khi hover sản phẩm */
-  }
-  
-  /* Kiểu cho link sản phẩm (Bỏ gạch chân và hiệu ứng hover) */
-  .product-link {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none; /* Bỏ gạch chân */
-    font-weight: bold;
-  }
-  
-  .product-link:hover {
-    color: #333; /* Không thay đổi màu khi hover */
-    text-decoration: none; /* Bỏ gạch chân khi hover */
-  }
-  
-  /* Kiểu cho thông báo khi không có ảnh */
-  .product-item p {
-    color: #888;
-    font-style: italic;
-  }
-  
-  
-  .product-item:hover .product-image {
-    transform: scale(1.05); /* Zoom nhẹ ảnh khi hover sản phẩm */
-  }
-  
-  /* Kiểu cho link sản phẩm (Bỏ gạch chân và hiệu ứng hover) */
-  .product-link {
-    font-size: 18px;
-    color: #333;
-    text-decoration: none; /* Bỏ gạch chân */
-    font-weight: bold;
-  }
-  
-  .product-link:hover {
-    color: #333; /* Không thay đổi màu khi hover */
-    text-decoration: none; /* Bỏ gạch chân khi hover */
-  }
-  
-  /* Kiểu cho thông báo khi không có ảnh */
-  .product-item p {
-    color: #888;
-    font-style: italic;
-  }
-  
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Căn chỉnh và kiểu dáng cho các link Thêm sản phẩm mới và Đăng nhập */
+.btn-new-product, .btn-login {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.btn-new-product {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-new-product:hover {
+  background-color: #388e3c;
+}
+
+.btn-login {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+/* Kiểu cho danh sách sản phẩm */
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Kiểu cho mỗi sản phẩm */
+.product-item {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng mạnh hơn */
+  transition: transform 0.3s, box-shadow 0.3s; /* Thêm hiệu ứng cho bóng */
+}
+
+.product-item:hover {
+  transform: scale(1); /* Không phóng to sản phẩm khi hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng khi hover */
+}
+
+/* Kiểu cho ảnh sản phẩm */
+.product-image {
+  width: 100%; /* Chiều rộng tự động theo lưới */
+  height: 200px; /* Chiều cao cố định */
+  object-fit: cover; /* Đảm bảo ảnh vừa khung mà không bị méo */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Thêm hiệu ứng zoom cho ảnh */
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05); /* Zoom nhẹ ảnh khi hover sản phẩm */
+}
+
+/* Kiểu cho link sản phẩm */
+.product-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none; /* Bỏ gạch chân */
+  font-weight: bold;
+}
+
+.product-link:hover {
+  color: #333; /* Không thay đổi màu khi hover */
+  text-decoration: none; /* Bỏ gạch chân khi hover */
+}
+
+/* Kiểu cho thông báo khi không có ảnh */
+.product-item p {
+  color: #888;
+  font-style: italic;
+}

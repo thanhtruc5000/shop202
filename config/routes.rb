@@ -17,6 +17,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   get "/products", to: "products#index"
-  resources :products
+  resources :products do
+    resources :subscribers, only: [ :create ]
+    resource :unsubscribe, only: [ :show ]
+
+  end
   root "products#index"
+  
 end

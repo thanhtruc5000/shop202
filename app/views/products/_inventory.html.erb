@@ -1,5 +1,11 @@
 <% if product.inventory_count? %>
-  <p><%= product.inventory_count %> sản phẩm còn trong kho</p>
+  <p><%= product.inventory_count %> sản phẩm còn hàng</p>
 <% else %>
   <p>Hết hàng</p>
+  <p>Gửi email cho tôi khi có hàng.</p>
+
+  <%= form_with model: [product, Subscriber.new] do |form| %>
+    <%= form.email_field :email, placeholder: "email@cuaban.com", required: true %>
+    <%= form.submit "Gửi" %>
+  <% end %>
 <% end %>

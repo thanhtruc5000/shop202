@@ -1,79 +1,88 @@
 /* CSS cho trang chi tiết sản phẩm */
 .product-details-page {
-    width: 100%;
-    max-width: 900px; /* Giới hạn chiều rộng của trang */
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-details-page h1 {
-    font-size: 32px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .product-details-page h2 {
-    font-size: 28px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .product-details-page p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-  
-  /* Container cho các nút hành động */
-  .action-buttons {
-    display: flex;
-    justify-content: center; /* Căn giữa các nút */
-    gap: 20px; /* Khoảng cách đều giữa các nút */
-    margin-top: 30px;
-  }
-  
-  /* Kiểu cho các nút */
-  .btn-back, .btn-edit, .btn-delete {
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  /* Nút Quay lại */
-  .btn-back {
-    background-color: #607d8b;
-    color: white;
-  }
-  
-  .btn-back:hover {
-    background-color: #455a64;
-  }
-  
-  /* Nút Chỉnh sửa */
-  .btn-edit {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .btn-edit:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Nút Xóa */
-  .btn-delete {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  .btn-delete:hover {
-    background-color: #d32f2f;
-  }
-  
+  width: 100%;
+  max-width: 900px; /* Giới hạn chiều rộng của trang */
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9fafb; /* Màu nền nhẹ nhàng */
+  border-radius: 10px; /* Bo góc mượt mà */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
+  font-family: 'Arial', sans-serif; /* Font chữ dễ đọc */
+}
+
+/* Tiêu đề chính */
+.product-details-page h1 {
+  font-size: 36px;
+  color: #2c3e50; /* Màu đậm hơn cho tiêu đề */
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase; /* Chuyển đổi chữ in hoa */
+  border-bottom: 2px solid #ecf0f1; /* Đường kẻ bên dưới */
+  padding-bottom: 10px;
+}
+
+/* Tiêu đề phụ */
+.product-details-page h2 {
+  font-size: 26px;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Đoạn văn bản */
+.product-details-page p {
+  font-size: 18px;
+  color: #7f8c8d; /* Màu chữ trung tính */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Container cho các nút hành động */
+.action-buttons {
+  display: flex;
+  justify-content: center; /* Căn giữa các nút */
+  gap: 15px; /* Khoảng cách giữa các nút */
+  margin-top: 20px;
+}
+
+/* Kiểu dáng cho các nút */
+.btn-back, .btn-edit, .btn-delete {
+  padding: 12px 25px;
+  border-radius: 8px; /* Bo góc mềm mại */
+  font-size: 16px;
+  text-decoration: none; /* Loại bỏ gạch chân */
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Hiệu ứng hover */
+}
+
+/* Nút Quay lại */
+.btn-back {
+  background-color: #2980b9;
+  color: white;
+}
+
+.btn-back:hover {
+  background-color: #1c5985; /* Màu tối hơn khi hover */
+}
+
+/* Nút Chỉnh sửa */
+.btn-edit {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #1e8449;
+}
+
+/* Nút Xóa */
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}

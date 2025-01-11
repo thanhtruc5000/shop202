@@ -1,23 +1,20 @@
-<div class="product-details-page">
-  <h1>Chi tiết sản phẩm</h1>
+<h1>Chi tiết sản phẩm</h1>
 
-  <%= image_tag @product.featured_image if @product.featured_image.attached? %>
+<%= image_tag @product.featured_image if @product.featured_image.attached? %>
 
-  <% cache @product do %>
-    <h2><%= @product.name %></h2>
-    <p><%= @product.description %></p>
+<% cache @product do %>
+  <h2><%= @product.name %></h2>
+  <p><%= @product.description %></p>
+  <p><strong>Số lượng tồn kho:</strong> <%= @product.inventory_count || "Không xác định" %></p>
+<% end %>
+<%= render "inventory", product: @product %>
+
+<div class="action-buttons">
+  <%= link_to "Quay lại", products_path, class: "btn-back" %>
+  <% if authenticated? %>
+    <%= link_to "Chỉnh sửa", edit_product_path(@product), class: "btn-edit" %>
+    <%= button_to "Xóa", @product, method: :delete, data: { turbo_confirm: "Bạn có chắc chắn?" }, class: "btn-delete" %>
   <% end %>
-
-
-  
-  <!-- Thêm một container để nhóm các nút lại với nhau -->
-  <div class="action-buttons">
-    <%= link_to "Quay lại", products_path, class: "btn-back" %>
-    <% if authenticated? %>
-      <%= link_to "Chỉnh sửa", edit_product_path(@product), class: "btn-edit" %>
-      <%= button_to "Xóa", @product, method: :delete, data: { turbo_confirm: "Bạn có chắc chắn?" }, class: "btn-delete" %>
-    <% end %>
-  </div>
 </div>
 
 

@@ -2,8 +2,8 @@
 <%= tag.div(flash[:notice], style: "color:green") if flash[:notice] %>
 
 <%= form_with url: registration_path do |form| %>
-  <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address] %><br>
-  <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Enter your password", maxlength: 72 %><br>
-  <%= form.submit "Sign up" %>
+  <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Nhập địa chỉ email của bạn", value: params[:email_address] %><br>
+  <%= form.password_field :password, required: true, autocomplete: "current-password", placeholder: "Nhập mật khẩu của bạn", maxlength: 72 %><br>
+  <%= form.submit "Đăng ký" %>
 <% end %>
 <br>
